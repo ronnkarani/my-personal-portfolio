@@ -29,7 +29,9 @@ SECRET_KEY = 'z^f1b0te(i#(dkn#0-e=3#zaxw_*%@b_ot@k(97vifa231*v0&'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['django-on-azure.azurewebsites.net']
+
 
 
 # Application definition
