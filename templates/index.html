@@ -112,7 +112,7 @@
                                     165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
                                     129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
                                     -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                                    <image class="home__blob-img" x='10' y='18' href="assets/img/about1.png"/>
+                                    <image class="home__blob-img" x='10' y='18' href="{% static 'assets/img/about1.png' %}"/>
                                 </g>
                             </svg>
                         </div>
@@ -151,7 +151,7 @@
                 <span class="section__subtitle">Introduction</span>
 
                 <div class="about__container container grid">
-                    <img src="assets/img/aboutus.jpg" alt="" class="about__img">
+                    <img src="{% static 'assets/img/aboutus.jpg' %}" alt="" class="about__img">
                     
                     <!--=== DESCRIPTION ===-->
                     <div class="about__data">
@@ -178,10 +178,11 @@
     
 
                         <div class="about__buttons">
-                            <a download="" href="assets/pdf/Resume-Ronny-Karani.pdf" class="button button--flex">Download Resume
+                            <a download="" href="assets/pdf/Resume-Ronny-Karani.pdf" class="button button--flex">View Resume
                                 <i class="uil uil-download-alt button__icon"></i>
                             </a>
                         </div>
+
                     </div>
                 </div>
         
@@ -204,7 +205,7 @@
                                 <h1 class="skills__title">
                                     Ui/Ux Web Design
                                 </h1>
-                                <span class="skills__subtitle">03+ Years Experience</span>
+                                <span class="skills__subtitle">User friendly designs User friendly designs User friendly designs</span>
                             </div>
                             <i class="uil uil-angle-down skills__arrow"></i>
                         </div>
@@ -220,15 +221,6 @@
                                 </div>
                             </div>
 
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Photoshop</h3>
-                                    
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__photoshop"></span>
-                                </div>
-                            </div>
                         </div>
                     </div>
 
@@ -238,9 +230,9 @@
                             <i class="uil uil-brackets-curly skills__icon"></i>
                             <div>
                                 <h1 class="skills__title">
-                                    Front End Development
+                                    Web Technologies
                                 </h1>
-                                <span class="skills__subtitle">03+ Years Experience</span>
+                                <span class="skills__subtitle">User friendly designs User friendly designs User friendly designs</span>
                             </div>
                             <i class="uil uil-angle-down skills__arrow"></i>
                         </div>
@@ -249,17 +241,17 @@
                             <div class="skills__data">
                                 <div class="skills__titles">
                                     <h3 class="skills__name">HTML</h3>
-                                    <span class="skills__number">100%</span>
+                                    <span class="skills__number"></span>
                                 </div>
-                                <div class="skills__bar">
+                                <!--<div class="skills__bar">
                                     <span class="skills__percentage skills__html"></span>
-                                </div>
+                                </div>-->
                             </div>
 
                             <div class="skills__data">
                                 <div class="skills__titles">
-                                    <h3 class="skills__name">CSS</h3>
-                                    <span class="skills__number">100%</span>
+                                    <h3 class="skills__name">CSS - Tailwind & Bootstrap</h3>
+                                    <span class="skills__number"></span>
                                 </div>
                                 <div class="skills__bar">
                                     <span class="skills__percentage skills__css"></span>
@@ -268,8 +260,8 @@
 
                             <div class="skills__data">
                                 <div class="skills__titles">
-                                    <h3 class="skills__name">JavaScript & React</h3>
-                                    <span class="skills__number">70%</span>
+                                    <h3 class="skills__name">JavaScript</h3>
+                                    <span class="skills__number"></span>
                                 </div>
                                 <div class="skills__bar">
                                     <span class="skills__percentage skills__js"></span>
@@ -278,8 +270,18 @@
 
                             <div class="skills__data">
                                 <div class="skills__titles">
-                                    <h3 class="skills__name">Others - Bootstrap & Saas</h3>
-                                    <span class="skills__number">100%</span>
+                                    <h3 class="skills__name">TypeScript</h3>
+                                    <span class="skills__number"></span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__js"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">PyScript</h3>
+                                    <span class="skills__number"></span>
                                 </div>
                                 <div class="skills__bar">
                                     <span class="skills__percentage skills__others"></span>
@@ -294,9 +296,9 @@
                             <i class="uil uil-server-network skills__icon"></i>
                             <div>
                                 <h1 class="skills__title">
-                                    Back End Development
+                                    Front End Development
                                 </h1>
-                                <span class="skills__subtitle">02+ Years Experience</span>
+                                <span class="skills__subtitle">design front end development software </span>
                             </div>
                             <i class="uil uil-angle-down skills__arrow"></i>
                         </div>
@@ -304,8 +306,8 @@
                         <div class="skills__list grid">
                             <div class="skills__data">
                                 <div class="skills__titles">
-                                    <h3 class="skills__name">Python & Django</h3>
-                                    <span class="skills__number">70%</span>
+                                    <h3 class="skills__name">Javascript - React</h3>
+                                    <span class="skills__number"></span>
                                 </div>
                                 <div class="skills__bar">
                                     <span class="skills__percentage skills__python"></span>
@@ -314,33 +316,14 @@
 
                             <div class="skills__data">
                                 <div class="skills__titles">
-                                    <h3 class="skills__name">JavaScript & Node</h3>
-                                    <span class="skills__number">70%</span>
+                                    <h3 class="skills__name">Next JS</h3>
+                                    <span class="skills__number"></span>
                                 </div>
                                 <div class="skills__bar">
-                                    <span class="skills__percentage skills__node"></span>
+                                    <span class="skills__percentage skills__python"></span>
                                 </div>
                             </div>
 
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Database - MySQL, Postgres & MongoDb</h3>
-                                    <span class="skills__number">60%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__database"></span>
-                                </div>
-                            </div>
-
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">Others - Firebase</h3>
-                                    <span class="skills__number">60%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__other"></span>
-                                </div>
-                            </div>
                         </div>
                     </div>
 
@@ -350,9 +333,9 @@
                             <i class="uil uil-server-network skills__icon"></i>
                             <div>
                                 <h1 class="skills__title">
-                                    Database Systems
+                                    Back End Development
                                 </h1>
-                                <span class="skills__subtitle">02+ Years Experience</span>
+                                <span class="skills__subtitle">Back End Development software </span>
                             </div>
                             <i class="uil uil-angle-down skills__arrow"></i>
                         </div>
@@ -360,8 +343,8 @@
                         <div class="skills__list grid">
                             <div class="skills__data">
                                 <div class="skills__titles">
-                                    <h3 class="skills__name">MySQL</h3>
-                                    <span class="skills__number">70%</span>
+                                    <h3 class="skills__name">JavaScript - Node</h3>
+                                    <span class="skills__number"></span>
                                 </div>
                                 <div class="skills__bar">
                                     <span class="skills__percentage skills__python"></span>
@@ -370,25 +353,54 @@
 
                             <div class="skills__data">
                                 <div class="skills__titles">
-                                    <h3 class="skills__name">Postgres</h3>
-                                    <span class="skills__number">70%</span>
+                                    <h3 class="skills__name">Express JS</h3>
+                                    <span class="skills__number"></span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__python"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Python - Django</h3>
+                                    <span class="skills__number"></span>
                                 </div>
                                 <div class="skills__bar">
                                     <span class="skills__percentage skills__node"></span>
                                 </div>
                             </div>
 
-                            <div class="skills__data">
-                                <div class="skills__titles">
-                                    <h3 class="skills__name">MongoDb</h3>
-                                    <span class="skills__number">60%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__database"></span>
-                                </div>
-                            </div>
                         </div>
                     </div>
+
+                    <!--====Skill 3====-->
+                    <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            <i class="uil uil-server-network skills__icon"></i>
+                            <div>
+                                <h1 class="skills__title">
+                                    Mobile App Development
+                                </h1>
+                                <span class="skills__subtitle">design front end development software </span>
+                            </div>
+                            <i class="uil uil-angle-down skills__arrow"></i>
+                        </div>
+
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Javascript - React Native (for both Android & iOS)</h3>
+                                    <span class="skills__number"></span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__python"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
 
                     <!--====Skill 5====-->
                     <div class="skills__content skills__close">
@@ -398,7 +410,7 @@
                                 <h1 class="skills__title">
                                     Other Related Skills
                                 </h1>
-                                <span class="skills__subtitle">03+ Years Experience</span>
+                                <span class="skills__subtitle">Working With Containers jdhsjsdkj sdjdhdsdjk sdhjdnsdsdh</span>
                             </div>
                             <i class="uil uil-angle-down skills__arrow"></i>
                         </div>
@@ -406,8 +418,8 @@
                         <div class="skills__list grid">
                             <div class="skills__data">
                                 <div class="skills__titles">
-                                    <h3 class="skills__name">Git - Version Control</h3>
-                                    <span class="skills__number">70%</span>
+                                    <h3 class="skills__name">Working With A.P.I's</h3>
+                                    <span class="skills__number"></span>
                                 </div>
                                 <div class="skills__bar">
                                     <span class="skills__percentage skills__python"></span>
@@ -416,8 +428,28 @@
 
                             <div class="skills__data">
                                 <div class="skills__titles">
-                                    <h3 class="skills__name">Linux Based Systems</h3>
-                                    <span class="skills__number">70%</span>
+                                    <h3 class="skills__name">Writing Tests - Jenkins</h3>
+                                    <span class="skills__number"></span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__python"></span>
+                                </div>
+                            </div>
+                            
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Using Version Control - Git</h3>
+                                    <span class="skills__number"></span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__python"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Working Linux Based Systems</h3>
+                                    <span class="skills__number"></span>
                                 </div>
                                 <div class="skills__bar">
                                     <span class="skills__percentage skills__node"></span>
@@ -426,8 +458,8 @@
 
                             <div class="skills__data">
                                 <div class="skills__titles">
-                                    <h3 class="skills__name">Docker</h3>
-                                    <span class="skills__number">60%</span>
+                                    <h3 class="skills__name">Working With Containers - Docker</h3>
+                                    <span class="skills__number"></span>
                                 </div>
                                 <div class="skills__bar">
                                     <span class="skills__percentage skills__database"></span>
@@ -436,8 +468,16 @@
 
                             <div class="skills__data">
                                 <div class="skills__titles">
-                                    <h3 class="skills__name"> Firebase</h3>
-                                    <span class="skills__number">60%</span>
+                                    <h3 class="skills__name">Working with  Firebase</h3>
+                                    <span class="skills__number"></span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage skills__other"></span>
+                                </div>
+
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Cloud Computing - Azure & A.W.S</h3>
+                                    <span class="skills__number"></span>
                                 </div>
                                 <div class="skills__bar">
                                     <span class="skills__percentage skills__other"></span>
@@ -475,10 +515,10 @@
                             <div class="qualification__data">
                                 <div>
                                     <h3 class="qualification__title">BSc. Computer Science</h3>
-                                    <span class="qualification__subtitle">Catholic University</span>
+                                    <span class="qualification__subtitle">Catholic University </span>
                                     <div class="qualification__calendar">
                                         <i class="uil uil-calendar-alt"></i>
-                                        2018 - present
+                                        May 2018 - March 2020
                                     </div>
                                 </div>
 
@@ -500,9 +540,10 @@
                                 <div>
                                     <h3 class="qualification__title">Responsive Web Design</h3>
                                     <span class="qualification__subtitle">FreeCode Camp - Online Bootcamp</span>
+                                    <p>Responsive web design (RWD) or responsive design is an approach to web design that aims to make web pages render well on a variety of devices and window o</p>
                                     <div class="qualification__calendar">
                                         <i class="uil uil-calendar-alt"></i>
-                                        2018 - 2019
+                                        Jan 2020 - April 2020
                                     </div>
                                 </div>
                             </div>
@@ -512,9 +553,10 @@
                                 <div>
                                     <h3 class="qualification__title">Front End Development</h3>
                                     <span class="qualification__subtitle">FreeCode Camp - Online Bootcamp</span>
+                                    <p>Responsive web design (RWD) or responsive design is an approach to web design that aims to make web pages render well on a variety of devices and window o</p>
                                     <div class="qualification__calendar">
                                         <i class="uil uil-calendar-alt"></i>
-                                        2018 -2019
+                                        May 2020 -Nov 2019
                                     </div>
                                 </div>
 
@@ -523,22 +565,42 @@
                                     <span class="qualification__line"></span>
                                 </div>
                             </div>
+
                             <!--=== QUALIFICATION  CONTENT 4 ===-->
                             <div class="qualification__data">
                                 <div></div>
 
                                 <div>
                                     <span class="qualification__rounder"></span>
-                                    <!--<span class="qualification__line"></span>-->
+                                    <span class="qualification__line"></span>
                                 </div>
 
                                 <div>
                                     <h3 class="qualification__title">Back End Development</h3>
                                     <span class="qualification__subtitle">FreeCode Camp - Online Bootcamp</span>
+                                    <p>Responsive web design (RWD) or responsive design is an approach to web design that aims to make web pages render well on a variety of devices and window o</p>
                                     <div class="qualification__calendar">
                                         <i class="uil uil-calendar-alt"></i>
-                                        2019 - 2020
+                                        Dec 2020 - March 2021
                                     </div>
+                                </div>
+                            </div>
+
+                            <!--=== QUALIFICATION  CONTENT 4 ===-->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Front End Development</h3>
+                                    <span class="qualification__subtitle">FreeCode Camp - Online Bootcamp</span>
+                                    <p>Responsive web design (RWD) or responsive design is an approach to web design that aims to make web pages render well on a variety of devices and window o</p>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        May 2020 -Nov 2019
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <!--<span class="qualification__line"></span>-->
                                 </div>
                             </div>
 
@@ -551,9 +613,10 @@
                                 <div>
                                     <h3 class="qualification__title">Web Design & Developer</h3>
                                     <span class="qualification__subtitle">Mt. Kenya Milk Company</span>
+                                    <p>hjhjjfjdfjf dfjfjsjfjfkdfijdf dijksdjsddjd sdhsdhsdhsdhsdb jdjhsdhdb</p>
                                     <div class="qualification__calendar">
                                         <i class="uil uil-calendar-alt"></i>
-                                        2019 -2020
+                                        April 2020 - Jan 2020
                                     </div>
                                 </div>
 
@@ -575,9 +638,10 @@
                                 <div>
                                     <h3 class="qualification__title">Freelance Full Stack Developer</h3>
                                     <span class="qualification__subtitle">Meru & Nairobi - Kenya</span>
+                                    <p>hjhjjfjdfjf dfjfjsjfjfkdfijdf dijksdjsddjd sdhsdhsdhsdhsdb jdjhsdhdb</p>
                                     <div class="qualification__calendar">
                                         <i class="uil uil-calendar-alt"></i>
-                                        2020 - 2021
+                                        Jan 2020 - Aug 2021
                                     </div>
                                 </div>
                             </div>
@@ -586,11 +650,12 @@
                             <div class="qualification__data">
 
                                 <div>
-                                    <h3 class="qualification__title">Freelance Full Stack Developer</h3>
-                                    <span class="qualification__subtitle">Meru & Nairobi - Kenya</span>
+                                    <h3 class="qualification__title"> Full Stack Developer</h3>
+                                    <span class="qualification__subtitle">Raknet Software Development Company</span>
+                                    <p>hjhjjfjdfjf dfjfjsjfjfkdfijdf dijksdjsddjd sdhsdhsdhsdhsdb jdjhsdhdb</p>
                                     <div class="qualification__calendar">
                                         <i class="uil uil-calendar-alt"></i>
-                                        2020 - 2021
+                                        July 2021 - Present
                                     </div>
                                 </div>
 
@@ -615,7 +680,7 @@
                     <div class="swiper-wrapper">
                         <!--==== PORTFOLIO ====-->
                         <div class="portfolio__content grid swiper-slide">
-                            <img src="assets/img/aboutus1.png" alt="" class="portfolio__img">
+                            <img src="{% static 'assets/img/aboutus.jpg' %}" alt="" class="portfolio__img">
 
                             <div class="portfolio__data">
                                 <h3 class="portfolio__title">
@@ -887,50 +952,50 @@
                             </a>
                         </div>
 
-                        <img src="assets/img/aboutus1.png" alt="" class="project__img">
+                        <img src="{% static 'assets/img/aboutus1.png' %}" alt="" class="project__img">
                     </div>
                 </div>
             </section>
 
 
             <!--======== TESTIMONIAL ===========-->
-        <section class="testimonial section">
-            <h2 class="section__title">Testimonial 🎙</h2>
-            <span class="section__subtitle">Client feedback</span>
+            <section class="testimonial section">
+                <h2 class="section__title">Testimonial 🎙</h2>
+                <span class="section__subtitle">Client feedback</span>
 
-            <div class="testimonial__container container swiper-container">
-                <div class="swiper-wrapper">
-                    <!--===== TESTIMONIAL 1 =====-->
-                    <div class="testimonial__content swiper-slide">
-                        <div class="testimonial__data">
-                            <div class="testimonial__header">
-                                <img src="assets/img/testimonial1.jpg" alt="" class="testimonial__img">
+                <div class="testimonial__container container swiper-container">
+                    <div class="swiper-wrapper">
+                        <!--===== TESTIMONIAL 1 =====-->
+                        <div class="testimonial__content swiper-slide">
+                            <div class="testimonial__data">
+                                <div class="testimonial__header">
+                                    <img src="assets/img/testimonial1.jpg" alt="" class="testimonial__img">
+
+                                    <div>
+                                        <h3 class="testimonial__name">Rondon</h3>
+                                        <span class="testimonial__client">Client</span>
+                                    </div>
+                                </div>
 
                                 <div>
-                                    <h3 class="testimonial__name">Rondon</h3>
-                                    <span class="testimonial__client">Client</span>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
                                 </div>
                             </div>
 
-                            <div>
-                                <i class="uil uil-star testimonial__icon-star"></i>
-                                <i class="uil uil-star testimonial__icon-star"></i>
-                                <i class="uil uil-star testimonial__icon-star"></i>
-                                <i class="uil uil-star testimonial__icon-star"></i>
-                                <i class="uil uil-star testimonial__icon-star"></i>
-                            </div>
+                            <p class="testimonial__description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, nisi aut. A facere, reprehenderit quae deleniti necessitatibus magnam odit assumenda?
+                            </p>
                         </div>
-
-                        <p class="testimonial__description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, nisi aut. A facere, reprehenderit quae deleniti necessitatibus magnam odit assumenda?
-                        </p>
                     </div>
-                </div>
 
-                <!--==== SWIPER PAGINATION ====-->               
-                <div class="swiper-pagination swiper-pagination-testimonial"></div>
-            </div>
-        </section>
+                    <!--==== SWIPER PAGINATION ====-->               
+                    <div class="swiper-pagination swiper-pagination-testimonial"></div>
+                </div>
+            </section>
 
 
             <!--==================== CONTACT ME ====================-->
