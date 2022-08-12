@@ -1,4 +1,4 @@
-/*============= MENU SHOW Y HIDDEN ==========*/
+/*==================== MENU SHOW Y HIDDEN ====================*/
 const navMenu = document.getElementById('nav-menu'),
     navToggle = document.getElementById('nav-toggle'),
     navClose = document.getElementById('nav-close')
@@ -16,13 +16,13 @@ if(navToggle){
 /*===== MENU HIDDEN =====*/
 /* Validate if constant exists */
 if(navClose){
-    navClose.addEventListener('click', () =>{
+    navClose.addEventListener('click', ()=>{
         navMenu.classList.remove('show-menu')
     })
 }
 
 
-/*============= REMOVE MENU MOBILE =============*/
+/*==================== REMOVE MENU MOBILE ====================*/
 const navLink = document.querySelectorAll('.nav__link')
 
 function linkAction(){
@@ -33,12 +33,12 @@ function linkAction(){
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
 
-/*============== ACCORDION SKILLS ==============*/
+/*==================== ACCORDION SKILLS ====================*/
 const skillsContent = document.getElementsByClassName('skills__content'),
-    skillsHeader = document.querySelectorAll('.skills__header')
+    skillsHeader = document.querySelectorAll('.skills__header')  
 
 function toggleSkills(){
-    let itemClass = this.parentNode.ClassName
+    let itemClass = this.parentNode.className
 
     for(i = 0; i < skillsContent.length; i++){
         skillsContent[i].className = 'skills__content skills__close'
@@ -49,7 +49,7 @@ function toggleSkills(){
 }
 
 skillsHeader.forEach((el) =>{
-    el.addEventListener('click', toggleSkills)
+    el.addEventListener('click',toggleSkills)
 })
 
 
@@ -98,44 +98,31 @@ modalCloses.forEach((modalClose) => {
 })
 
 
-/*============= PORTFOLIO SWIPER  =================*/
-let swiperPortfolio = new Swiper('.portfolio__container', {
-    cssMode: true,
-    loop: true,
+/*==================== WORK MODAL ====================
+const modalViews = document.querySelectorAll('.work__modal'),
+    modalBtns = document.querySelectorAll('.work__button'),
+    modalClose = document.querySelectorAll('.work__modal-close')
 
-    navigation: {
-        nextE1: '.swiper-button-next',
-        prevE1: '.swiper-button-next',
-    },
-    pagination: {
-        e1: '.swiper-pagination',
-        clickable:true,
-    },
-    /*mousewheel: true,
-    keyboard: true,*/
-});
+let modal = function(modalClick){
+    modalViews[modalClick].classList.add('active-modal')
+}
 
+modalBtns.forEach((mb, i) =>{
+    mb.addEventListener('click', () =>{
+        modal(i)
+    })
+})
 
-/*============== TESTIMONIAL ===============*/
-let swiperTestimonial = new Swiper('.testimonial__container', {
-    loop: true,
-    grabCursor: true,
-    spaceBetween: 48,
-
-    pagination: {
-        e1: '.swiper-pagination',
-        clickable:true,
-        dynamicBullets: true,
-    },
-    breakpoints:{
-        568:{
-            slidePerView: 2,
-        }
-    }
-});
+modalClose.forEach((mc) =>{
+    mc.addEventListener('click', () =>{
+        modalViews.forEach((mv) =>{
+            mv.classList.remove('active-modal')
+        })
+    })
+})*/
 
 
-/*======== SCROLL SECTIONS ACTIVE LINK =========*/
+/*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]')
 
 function scrollActive(){
@@ -156,7 +143,7 @@ function scrollActive(){
 window.addEventListener('scroll', scrollActive)
 
 
-/*========= CHANGE BACKGROUND HEADER =========*/ 
+/*==================== CHANGE BACKGROUND HEADER ====================*/ 
 function scrollHeader(){
     const nav = document.getElementById('header')
     // When the scroll is greater than 200 viewport height, add the scroll-header class to the header tag
@@ -165,7 +152,7 @@ function scrollHeader(){
 window.addEventListener('scroll', scrollHeader)
 
 
-/*========== SHOW SCROLL UP ============*/ 
+/*==================== SHOW SCROLL UP ====================*/ 
 function scrollUp(){
     const scrollUp = document.getElementById('scroll-up');
     // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
@@ -174,7 +161,7 @@ function scrollUp(){
 window.addEventListener('scroll', scrollUp)
 
 
-/*=========== DARK LIGHT THEME =============*/ 
+/*==================== DARK LIGHT THEME ====================*/ 
 const themeButton = document.getElementById('theme-button')
 const darkTheme = 'dark-theme'
 const iconTheme = 'uil-sun'
@@ -193,6 +180,7 @@ if (selectedTheme) {
     document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
     themeButton.classList[selectedIcon === 'uil-moon' ? 'add' : 'remove'](iconTheme)
 }
+
 
 // Activate / deactivate the theme manually with the button
 themeButton.addEventListener('click', () => {
