@@ -97,30 +97,41 @@ modalCloses.forEach((modalClose) => {
     })
 })
 
+/*============= PORTFOLIO SWIPER  =================*/
+let swiperPortfolio = new Swiper('.portfolio__container', {
+    cssMode: true,
+    loop: true,
 
-/*==================== WORK MODAL ====================
-const modalViews = document.querySelectorAll('.work__modal'),
-    modalBtns = document.querySelectorAll('.work__button'),
-    modalClose = document.querySelectorAll('.work__modal-close')
+    navigation: {
+        nextE1: '.swiper-button-next',
+        prevE1: '.swiper-button-next',
+    },
+    pagination: {
+        e1: '.swiper-pagination',
+        clickable:true,
+    },
+    mousewheel: true,
+    keyboard: true,
+});
 
-let modal = function(modalClick){
-    modalViews[modalClick].classList.add('active-modal')
-}
 
-modalBtns.forEach((mb, i) =>{
-    mb.addEventListener('click', () =>{
-        modal(i)
-    })
-})
+/*============== TESTIMONIAL ===============*/
+let swiperTestimonial = new Swiper('.testimonial__container', {
+    loop: true,
+    grabCursor: true,
+    spaceBetween: 48,
 
-modalClose.forEach((mc) =>{
-    mc.addEventListener('click', () =>{
-        modalViews.forEach((mv) =>{
-            mv.classList.remove('active-modal')
-        })
-    })
-})*/
-
+    pagination: {
+        e1: '.swiper-pagination',
+        clickable:true,
+        dynamicBullets: true,
+    },
+    breakpoints:{
+        568:{
+            slidePerView: 2,
+        }
+    }
+});
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]')

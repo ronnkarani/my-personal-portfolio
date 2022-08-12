@@ -1,6 +1,7 @@
 /*==================== GOOGLE FONTS ====================*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
+
 /*==================== VARIABLES CSS ====================*/
 :root {
     --header-height: 3rem;
@@ -39,7 +40,7 @@
     --font-medium: 500;
     --font-semi-bold: 600;
 
-    /*========== Margenes Bottom ==========*/
+    /*========== Margins Bottom ==========*/
     /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
     --mb-0-25: .25rem;
     --mb-0-5: .5rem;
@@ -69,18 +70,20 @@
     }
 }
 
+
 /*========== Variables Dark theme ==========*/
 body.dark-theme{
-       /* HSL color mode */
-       --first-color-second: hsl(var(--hue-color), 30%, 8%);
-       --title-color: hsl(var(--hue-color), 8%, 95%);
-       --text-color: hsl(var(--hue-color), 8%, 75%);
-       --input-color: hsl(var(--hue-color), 29%, 16%);
-       --body-color: hsl(var(--hue-color), 28%, 12%);
-       --container-color: hsl(var(--hue-color), 29%, 16%);
-       --scroll-bar-color: hsl(var(--hue-color),12%, 48%);
-       --scroll-thumb-color: hsl(var(--hue-color),12%, 36%);
+        /* HSL color mode */
+        --first-color-second: hsl(var(--hue-color), 30%, 8%);
+        --title-color: hsl(var(--hue-color), 8%, 95%);
+        --text-color: hsl(var(--hue-color), 8%, 75%);
+        --input-color: hsl(var(--hue-color), 29%, 16%);
+        --body-color: hsl(var(--hue-color), 28%, 12%);
+        --container-color: hsl(var(--hue-color), 29%, 16%);
+        --scroll-bar-color: hsl(var(--hue-color),12%, 48%);
+        --scroll-thumb-color: hsl(var(--hue-color),12%, 36%);
 }
+
 
 /*========== Button Dark/Light ==========*/
 .nav__btns{
@@ -98,6 +101,7 @@ body.dark-theme{
 .change-theme:hover{
     color: var(--first-color);
 }
+
 
 /*==================== BASE ====================*/
 *{
@@ -136,6 +140,7 @@ img{
     height: auto;
 }
 
+
 /*==================== REUSABLE CSS CLASSES ====================*/
 .section{
     padding: 2rem 0 4rem;
@@ -155,6 +160,7 @@ img{
 .section__subtitle{
     text-align: center;
 }
+
 
 /*==================== LAYOUT ====================*/
 .container{
@@ -176,6 +182,7 @@ img{
     z-index: var(--z-fixed);
     background-color: var(--body-color);
 }
+
 
 /*==================== NAV ====================*/
 .nav{
@@ -254,7 +261,6 @@ img{
     color: var(--first-color-alt);
 }
 
-
 /* show menu */
 .show-menu{
     bottom: 0;
@@ -270,6 +276,7 @@ img{
 .scroll-header{
     box-shadow: 0 -1px 4px rgba(0,0,0,.15);
 }
+
 
 /*==================== HOME ====================*/
 .home__container{
@@ -353,6 +360,7 @@ img{
     font-size: 1.25rem;
 }
 
+
 /*==================== BUTTONS ====================*/
 .button{
     display: inline-block;
@@ -401,6 +409,8 @@ img{
     background-color: transparent;
     color: var(--first-color-alt);
 }
+
+
 /*==================== ABOUT ====================*/
 .about__img{
     width: 200px;
@@ -441,6 +451,7 @@ img{
     justify-content: center;
 }
 
+
 /*==================== PROJECT IN MIND ====================*/
 .project{
     text-align: center;
@@ -469,6 +480,7 @@ img{
     width: 232px;
     justify-self: center;
 }
+
 
 /*==================== SKILLS ====================*/
 .skills__container{
@@ -574,6 +586,7 @@ img{
     transform: rotate(-180deg);
 }
 
+
 /*==================== QUALIFICATION ====================*/
 .qualification__tabs{
     display: flex;
@@ -645,6 +658,7 @@ img{
 .qualification__button.qualification__active{
     color: var(--first-color);
 }
+
 
 /*==================== SERVICES ====================*/
 .services__container{
@@ -745,9 +759,10 @@ img{
     visibility: visible;
 }
 
+
 /*==================== PORTFOLIO ====================*/
 .portfolio__container{
-    overflow: hidden;
+    overflow: initial;
 }
 
 .portfolio__content{
@@ -777,6 +792,7 @@ img{
 .swiper-button-next::after{
     content: '';
 }
+
 
 .swiper-portfolio-icon{
     font-size: 2rem;
