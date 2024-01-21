@@ -16,12 +16,14 @@
 
         <title>💻 Ronny Portfolio</title>
     </head>
+
     <body>
         <!--==================== HEADER ====================-->
         <header class="header" id="header">
             <nav class="nav container">
                 <a href="#" class="nav__logo">Ronny  💻</a>
 
+                <!--===== NAVBAR ======-->
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list grid">
                         <li class="nav__item">
@@ -32,6 +34,16 @@
                         <li class="nav__item">
                             <a href="#about" class="nav__link">
                                 <i class="uil uil-user-circle nav__icon"></i> About
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link">
+                                <i class="uil uil-user-circle nav__icon"></i> Skills
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#services" class="nav__link">
+                                <i class="uil uil-user-circle nav__icon"></i> Services
                             </a>
                         </li>
                         <li class="nav__item">
@@ -55,13 +67,18 @@
                     </ul>
                     <i class="uil uil-times nav__close" id="nav-close"></i>
                 </div>
+
+                <!--===== NAVBAR BUTTONS ======-->
                 <div class="nav__btns">
+
                     <!--Theme change button-->
                     <i class="uil uil-moon change-theme" id="theme-button"></i>
 
+                    <!--Menu toggle buttons button-->
                     <div class="nav__toggle" id="nav-toggle">
                         <i class="uil uil-apps"></i>
                     </div>
+
                 </div>
             </nav>
         </header>
@@ -70,11 +87,11 @@
         <!--==================== MAIN ====================-->
         <main class="main">
 
-
             <!--==================== HOME ====================-->
             <section class="home section" id="home">
                 <div class="home__container container grid">
                     <div class="home__content grid">
+
                         <!--===== SOCIAL MEDIA ======-->
                         <div class="home__social">
                             <a href="https://github.com/" 
@@ -116,13 +133,13 @@
                         <!--===== INTRODUCTION ======-->
                         <div class="home__data">
                             <h1 class="home__title">
-                                Hi 👋, I'm Ronny Karani
+                                Hello there 👋, I'm Ronny Karani.
                             </h1>
                             <h3 class="home__subtitle">
-                                A motivated Full Stack Software Developer 💻.
+                                I'm a full-stack software engineer currently working as a freelancer 🤖.
                             </h3>
                             <p class="home__description">
-                                High level experience in Web Design and Development knowledge, producing quality work.
+                                I specialize in developing websites,mobile applications and other software products that are tailored to my clients' specific needs and individual business requirements.
                             </p>
                             <a href="#contact" class="button button--flex">Contact Me
                                 <i class="uil uil-message button__icon"></i>
@@ -130,31 +147,34 @@
                         </div>
                     </div>
 
+                    <!--===== SCROLL DOWN BUTTON======-->
                     <div class="home__scroll">
                         <a href="#about" class="home__scroll-button button--flex">
                             <i class="uil uil-mouse-alt home__scroll-mouse"></i>
-                            <span class="home__scroll-name">Scroll down</span>
+                            <span class="home__scroll-name">Scroll down for more info.</span>
                             <i class="uil uil-arrow-down home__scroll-arrow"></i>
                         </a>
                     </div>
                 </div>
             </section>
 
-
             <!--==================== ABOUT ====================-->
             <section class="about section" id="about">
                 <h2 class="section__title">About Me 📑</h2>
-                <span class="section__subtitle">Introduction</span>
+                <span class="section__subtitle">Introduction to my world as a full-stack engineer.</span>
 
                 <div class="about__container container grid">
                     <img src="{% static 'assets/img/aboutus.jpg' %}" alt="" class="about__img">
                     
                     <!--=== DESCRIPTION ===-->
                     <div class="about__data">
-                        <p class="about__description">
-                            I'm an experienced  and motivated Software Craftsman 🎯 adept at bringing forth expertise in design development, installation, testing and
-                            maintenance of software systems.
-                            Addicted to personal development and excited by tackling challenges and offering software driven solutions 💼.
+                        <p class="about__description"> I have over 3 years of experience and I've worked on close to 20 projects whilst working as freelance full stack developer 🎯.
+                        <br>
+                        <br>
+                        I'm never satisfied with merely having ideas but instead, I feel compelled to act on them accordingly. I'm highly motivated and always willing to learn and sharpen my skills.
+                        <br>
+                        <br>
+                        I'm an experienced  and motivated software craftsman  adept at bringing forth and tackling challenges by offering software driven solutions 💼.
                         </p>
 
                         <div class="about__info">
@@ -163,7 +183,7 @@
                                 <span class="about__info-name">Years <br> Experience</span>
                             </div>
                             <div>
-                                <span class="about__info-title">10+</span>
+                                <span class="about__info-title">20+</span>
                                 <span class="about__info-name">Completed <br> Projects</span>
                             </div>
                             <div>
@@ -184,12 +204,10 @@
         
             </section>
 
-
-
             <!--==================== SKILLS ====================-->
             <section class="skills section" id="skills">
                 <h2 class="section__title">Skills</h2>
-                <span class="section__subtitle">Technical expertise</span>
+                <span class="section__subtitle">Technical expertise and skills I've mastered so far.</span>
 
                 <div class="skill__container container grid">
                     
@@ -498,11 +516,10 @@
 
             </section>
 
-
             <!--======= QUALIFICATIONS =======-->
             <section class="qualification section">
                 <h2 class="section__title">Qualification</h2>
-                <span class="section__subtitle">My career journey so far</span>
+                <span class="section__subtitle">My career journey as a full-stack developer so far.</span>
 
                 <div class="qualification__container container">
                     <div class="qualification__tabs">
@@ -678,17 +695,16 @@
                 </div>
             </section>
 
-
             <!--============ PORTFOLIO ===========-->
             <section class="portfolio section" id="portfolio">
                 <h2 class="section__title">Projects</h2>
-                <span class="section__subtitle">Some of my projects</span>
+                <span class="section__subtitle">Some of the projects I've worked on.</span>
 
                 <div class="portfolio__container container swiper-container">
                     
                     <div class="swiper-wrapper">
                         {% if posts %}
-                        {% for post in posts%}
+                        {% for post in posts %}
                         <!--==== PORTFOLIO ====-->
                         <div class="portfolio__content grid swiper-slide">
                             <img src="{{post.photo.url}}" alt="" class="portfolio__img">
@@ -729,7 +745,7 @@
             <!--=========== SERVICES ===========-->
             <section class="services section" id="services">
                 <h2 class="section__title">Services</h2>
-                <span class="section__subtitle">What I offer clients</span>
+                <span class="section__subtitle">Some of the services I offer to my clients.</span>
 
                 <div class="services__container container grid">
                     <!--==== SERVICE 1 ====-->
@@ -959,7 +975,7 @@
                                 Do you have a project in mind?
                             </h2>
                             <p class="project__description">
-                                Contact me now!
+                                Contact me today!
                             </p>
                             <a href="#contact" class="button button--flex button--white">
                                 Contact
@@ -976,16 +992,43 @@
 
             <!--======== TESTIMONIAL ===========-->
             <section class="testimonial section">
-                <h2 class="section__title">Testimonial 🎙</h2>
-                <span class="section__subtitle">Client feedback</span>
+                <h2 class="section__title">Testimonies 🎙</h2>
+                <span class="section__subtitle">Client feedback from previous work done.</span>
 
                 <div class="testimonial__container container swiper-container">
                     <div class="swiper-wrapper">
+
                         <!--===== TESTIMONIAL 1 =====-->
                         <div class="testimonial__content swiper-slide">
                             <div class="testimonial__data">
                                 <div class="testimonial__header">
-                                    <img src="assets/img/testimonial1.jpg" alt="" class="testimonial__img">
+                                    <img src="assets/img/testimonial1.jpeg" alt="" class="testimonial__img">
+
+                                    <div>
+                                        <h3 class="testimonial__name">Rondon</h3>
+                                        <span class="testimonial__client">Client</span>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                </div>
+                            </div>
+
+                            <p class="testimonial__description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, nisi aut. A facere, reprehenderit quae deleniti necessitatibus magnam odit assumenda?
+                            </p>
+                        </div>
+
+                        <!--===== TESTIMONIAL 2 =====-->
+                        <div class="testimonial__content swiper-slide">
+                            <div class="testimonial__data">
+                                <div class="testimonial__header">
+                                    <img src="assets/img/testimonial2.jpeg" alt="" class="testimonial__img">
 
                                     <div>
                                         <h3 class="testimonial__name">Rondon</h3>
@@ -1017,10 +1060,11 @@
             <!--==================== CONTACT ME ====================-->
             <section class="contact section" id="contact">
                 <h2 class="section__title">Contact 📬</h2>
-                <span class="section__subtitle">Get in touch</span>
+                <span class="section__subtitle">Get in touch with me today.</span>
 
                 <div class="contact__container container grid">
                     <div>
+
                         <!--=== CALL ===-->
                         <div class="contact__information">
                             <i class="uil uil-phone contact__icon"></i>
@@ -1043,6 +1087,7 @@
 
                     <form class="contact__form grid" action="#" method="POST">
                         <div class="contact__inputs grid">
+
                             <!-- === NAME === -->
                             <div class="contact__content">
                                 <label for="" class="contact__label">
@@ -1074,6 +1119,7 @@
                                     <i class="uil uil-message button__icon"></i>
                                 </button>
                             </div>
+
                         </div>
                     </form>
                 </div>
